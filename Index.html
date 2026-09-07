@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="TV Master - Curso profissional de montagem e conserto de TVs. Aprenda diagnóstico, reparo de fontes, backlight, placas, T-Con, Smart TVs e muito mais.">
+
+    <meta name="theme-color" content="#07111f">
+
+    <title>TV Master | Montagem e Conserto de TVs</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="topbar">
+
+    <div class="logo">
+        <div class="logo-icon">TV</div>
+
+        <div>
+            <strong>TV MASTER</strong>
+            <span>Academy</span>
+        </div>
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="#inicio">Início</a>
+        <a href="#curso">Curso</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#laboratorio">Laboratório</a>
+        <a href="#certificado">Certificado</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+        <button
+            class="theme-button"
+            id="themeButton"
+            aria-label="Alterar tema">
+            ☾
+        </button>
+
+        <button
+            class="login-button"
+            onclick="openLogin()">
+            Entrar
+        </button>
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            🔧 CURSO PROFISSIONAL
+        </div>
+
+        <h1>
+            Aprenda a
+            <span>Montar e Consertar TVs</span>
+            do Zero ao Profissional
+        </h1>
+
+        <p class="hero-description">
+            Aprenda na prática como diagnosticar defeitos,
+            desmontar, montar e reparar TVs LED, LCD e Smart TVs,
+            desde os fundamentos até técnicas avançadas.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button
+                class="primary-button"
+                onclick="buyCourse()">
+                Comprar curso — R$ 300,00
+            </button>
+
+            <a
+                href="#curso"
+                class="secondary-button">
+                Conhecer o curso
+            </a>
+
+        </div>
+
+        <div class="hero-info">
+
+            <div>
+                <strong>15</strong>
+                <span>Módulos</span>
+            </div>
+
+            <div>
+                <strong>100+</strong>
+                <span>Aulas</span>
+            </div>
+
+            <div>
+                <strong>Prático</strong>
+                <span>Laboratórios</span>
+            </div>
+
+            <div>
+                <strong>Certificado</strong>
+                <span>Conclusão</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TV VISUAL -->
+
+    <div class="tv-showcase">
+
+        <div class="tv-frame">
+
+            <div class="tv-screen">
+
+                <div class="screen-content">
+
+                    <div class="screen-header">
+                        TV MASTER
+                    </div>
+
+                    <div class="screen-title">
+                        DIAGNÓSTICO
+                    </div>
+
+                    <div class="diagnostic-panel">
+
+                        <div class="diagnostic-item">
+                            <span>POWER</span>
+                            <strong>OK</strong>
+                        </div>
+
+                        <div class="diagnostic-item">
+                            <span>BACKLIGHT</span>
+                            <strong>OK</strong>
+                        </div>
+
+                        <div class="diagnostic-item">
+                            <span>MAIN BOARD</span>
+                            <strong>OK</strong>
+                        </div>
+
+                        <div class="diagnostic-item warning">
+                            <span>T-CON</span>
+                            <strong>!</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="screen-footer">
+                        SISTEMA DE DIAGNÓSTICO
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tv-bottom"></div>
+
+        </div>
+
+        <div class="tv-stand"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CURSO
+========================================================= -->
+
+<section class="section" id="curso">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            O CURSO
+        </span>
+
+        <h2>
+            Tudo para você dominar
+            <span>o reparo de TVs</span>
+        </h2>
+
+        <p>
+            Uma formação criada para levar você dos conceitos básicos
+            até diagnósticos e reparos avançados.
+        </p>
+
+    </div>
+
+
+    <div class="features-grid">
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🔬
+            </div>
+
+            <h3>
+                Diagnóstico
+            </h3>
+
+            <p>
+                Aprenda a identificar defeitos utilizando
+                métodos sistemáticos de diagnóstico.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Eletrônica
+            </h3>
+
+            <p>
+                Entenda fontes, componentes, tensões,
+                sinais e circuitos eletrônicos.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                💡
+            </div>
+
+            <h3>
+                Backlight
+            </h3>
+
+            <p>
+                Aprenda a diagnosticar e reparar problemas
+                relacionados aos LEDs e iluminação.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🧠
+            </div>
+
+            <h3>
+                Smart TVs
+            </h3>
+
+            <p>
+                Conheça placas, firmware, sistemas,
+                memória e problemas comuns.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🛠️
+            </div>
+
+            <h3>
+                Reparo
+            </h3>
+
+            <p>
+                Aprenda procedimentos de manutenção
+                e substituição de componentes.
+            </p>
+
+        </article>
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                📈
+            </div>
+
+            <h3>
+                Profissão
+            </h3>
+
+            <p>
+                Aprenda como estruturar uma bancada
+                e começar a trabalhar profissionalmente.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PREÇO
+========================================================= -->
+
+<section class="pricing-section">
+
+    <div class="pricing-card">
+
+        <div class="pricing-content">
+
+            <span class="pricing-label">
+                ACESSO COMPLETO
+            </span>
+
+            <h2>
+                Curso TV Master
+            </h2>
+
+            <p>
+                Tenha acesso à formação completa
+                de montagem e conserto de TVs.
+            </p>
+
+            <div class="price">
+                <small>R$</small>
+                300<span>,00</span>
+            </div>
+
+            <ul class="price-list">
+
+                <li>✓ 15 módulos completos</li>
+                <li>✓ Aulas práticas</li>
+                <li>✓ Exercícios</li>
+                <li>✓ Quizzes</li>
+                <li>✓ Laboratório de diagnóstico</li>
+                <li>✓ Acompanhamento de progresso</li>
+                <li>✓ Certificado de conclusão</li>
+                <li>✓ Acesso pelo celular e computador</li>
+
+            </ul>
+
+            <button
+                class="buy-large"
+                onclick="buyCourse()">
+
+                Comprar agora — R$ 300,00
+
+            </button>
+
+            <p class="payment-note">
+                Pagamento processado pelo Mercado Pago.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     MÓDULOS
+========================================================= -->
+
+<section class="section" id="modulos">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            CONTEÚDO
+        </span>
+
+        <h2>
+            15 módulos para sua formação
+        </h2>
+
+        <p>
+            Uma trilha progressiva para você aprender
+            diagnóstico e reparo de TVs.
+        </p>
+
+    </div>
+
+
+    <div class="modules-grid" id="modulesGrid">
+
+        <article class="module-card">
+
+            <span class="module-number">
+                01
+            </span>
+
+            <div>
+                <h3>
+                    Introdução às TVs
+                </h3>
+
+                <p>
+                    Tipos de televisores,
+                    tecnologias e arquitetura.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                02
+            </span>
+
+            <div>
+                <h3>
+                    Ferramentas e Bancada
+                </h3>
+
+                <p>
+                    Multímetro, fonte, ferro de solda,
+                    estação e equipamentos.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                03
+            </span>
+
+            <div>
+                <h3>
+                    Eletrônica Aplicada
+                </h3>
+
+                <p>
+                    Componentes, medições,
+                    tensão e corrente.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                04
+            </span>
+
+            <div>
+                <h3>
+                    Arquitetura das Smart TVs
+                </h3>
+
+                <p>
+                    Conheça as principais placas
+                    e suas funções.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                05
+            </span>
+
+            <div>
+                <h3>
+                    Diagnóstico de Defeitos
+                </h3>
+
+                <p>
+                    Técnicas para localizar
+                    falhas rapidamente.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                06
+            </span>
+
+            <div>
+                <h3>
+                    Desmontagem e Montagem
+                </h3>
+
+                <p>
+                    Procedimentos para desmontar
+                    e montar televisores.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                07
+            </span>
+
+            <div>
+                <h3>
+                    Fontes de Alimentação
+                </h3>
+
+                <p>
+                    Diagnóstico de fontes,
+                    tensões e componentes.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                08
+            </span>
+
+            <div>
+                <h3>
+                    Backlight e LEDs
+                </h3>
+
+                <p>
+                    Diagnóstico de iluminação
+                    e barras de LED.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                09
+            </span>
+
+            <div>
+                <h3>
+                    Main Board
+                </h3>
+
+                <p>
+                    Processador, memória,
+                    sinais e alimentação.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                10
+            </span>
+
+            <div>
+                <h3>
+                    T-Con e Imagem
+                </h3>
+
+                <p>
+                    Diagnóstico de imagem,
+                    sinais e comunicação.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                11
+            </span>
+
+            <div>
+                <h3>
+                    Painel LCD
+                </h3>
+
+                <p>
+                    Estrutura, defeitos,
+                    linhas e falhas de imagem.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                12
+            </span>
+
+            <div>
+                <h3>
+                    Firmware e Smart TVs
+                </h3>
+
+                <p>
+                    Software, atualização,
+                    memória e recuperação.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                13
+            </span>
+
+            <div>
+                <h3>
+                    Diagnóstico Avançado
+                </h3>
+
+                <p>
+                    Técnicas para defeitos
+                    complexos.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                14
+            </span>
+
+            <div>
+                <h3>
+                    Montagem de uma TV
+                </h3>
+
+                <p>
+                    Projeto prático completo
+                    de montagem.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="module-card">
+
+            <span class="module-number">
+                15
+            </span>
+
+            <div>
+                <h3>
+                    Profissão e Assistência
+                </h3>
+
+                <p>
+                    Bancada, atendimento,
+                    organização e trabalho.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LABORATÓRIO
+========================================================= -->
+
+<section class="section lab-section" id="laboratorio">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            LABORATÓRIO
+        </span>
+
+        <h2>
+            Aprenda resolvendo
+            <span>problemas reais</span>
+        </h2>
+
+    </div>
+
+
+    <div class="lab-grid">
+
+        <article class="lab-card">
+
+            <div class="lab-icon">
+                ⚫
+            </div>
+
+            <h3>
+                TV não liga
+            </h3>
+
+            <p>
+                Aprenda uma sequência de diagnóstico
+                para localizar a causa da falha.
+            </p>
+
+            <button onclick="openCase('TV não liga')">
+                Ver caso
+            </button>
+
+        </article>
+
+
+        <article class="lab-card">
+
+            <div class="lab-icon">
+                🔊
+            </div>
+
+            <h3>
+                Som sem imagem
+            </h3>
+
+            <p>
+                Analise backlight, alimentação
+                e circuito de imagem.
+            </p>
+
+            <button onclick="openCase('Som sem imagem')">
+                Ver caso
+            </button>
+
+        </article>
+
+
+        <article class="lab-card">
+
+            <div class="lab-icon">
+                🔄
+            </div>
+
+            <h3>
+                TV reiniciando
+            </h3>
+
+            <p>
+                Aprenda a investigar fontes,
+                firmware e placas.
+            </p>
+
+            <button onclick="openCase('TV reiniciando')">
+                Ver caso
+            </button>
+
+        </article>
+
+
+        <article class="lab-card">
+
+            <div class="lab-icon">
+                📺
+            </div>
+
+            <h3>
+                Linhas na tela
+            </h3>
+
+            <p>
+                Aprenda a diferenciar problemas
+                de T-Con, painel e sinais.
+            </p>
+
+            <button onclick="openCase('Linhas na tela')">
+                Ver caso
+            </button>
+
+        </article>
+
+
+        <article class="lab-card">
+
+            <div class="lab-icon">
+                🌐
+            </div>
+
+            <h3>
+                Smart TV travando
+            </h3>
+
+            <p>
+                Analise armazenamento,
+                firmware e sistema.
+            </p>
+
+            <button onclick="openCase('Smart TV travando')">
+                Ver caso
+            </button>
+
+        </article>
+
+
+        <article class="lab-card">
+
+            <div class="lab-icon">
+                🔌
+            </div>
+
+            <h3>
+                HDMI sem sinal
+            </h3>
+
+            <p>
+                Aprenda a investigar entrada,
+                sinais e placa principal.
+            </p>
+
+            <button onclick="openCase('HDMI sem sinal')">
+                Ver caso
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMO FUNCIONA
+========================================================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            COMO FUNCIONA
+        </span>
+
+        <h2>
+            Sua jornada dentro do TV Master
+        </h2>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <span>01</span>
+
+            <h3>
+                Faça sua inscrição
+            </h3>
+
+            <p>
+                Adquira o curso através do
+                checkout do Mercado Pago.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>02</span>
+
+            <h3>
+                Estude os módulos
+            </h3>
+
+            <p>
+                Avance pela formação seguindo
+                a ordem recomendada.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>03</span>
+
+            <h3>
+                Pratique
+            </h3>
+
+            <p>
+                Resolva os casos de laboratório
+                e exercícios.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>04</span>
+
+            <h3>
+                Conclua o curso
+            </h3>
+
+            <p>
+                Faça a avaliação final e
+                conquiste seu certificado.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CERTIFICADO
+========================================================= -->
+
+<section class="certificate-section" id="certificado">
+
+    <div class="certificate-content">
+
+        <span class="section-label">
+            CERTIFICADO
+        </span>
+
+        <h2>
+            Conclua sua formação
+        </h2>
+
+        <p>
+            Ao completar os módulos e a avaliação final,
+            você poderá receber seu certificado de conclusão.
+        </p>
+
+        <div class="certificate-preview">
+
+            <div class="certificate-border">
+
+                <span>
+                    TV MASTER ACADEMY
+                </span>
+
+                <h3>
+                    CERTIFICADO
+                </h3>
+
+                <p>
+                    Curso Profissional de
+                    Montagem e Conserto de TVs
+                </p>
+
+                <div class="certificate-line"></div>
+
+                <small>
+                    Certificado de conclusão
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTATO
+========================================================= -->
+
+<section class="contact-section" id="contato">
+
+    <div class="contact-box">
+
+        <div>
+
+            <span class="section-label">
+                PRECISA DE AJUDA?
+            </span>
+
+            <h2>
+                Entre em contato
+            </h2>
+
+            <p>
+                Tem alguma dúvida sobre o curso?
+                Fale conosco.
+            </p>
+
+        </div>
+
+        <button
+            class="secondary-button"
+            onclick="contact()">
+
+            Entrar em contato
+
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        TV MASTER
+    </div>
+
+    <p>
+        © 2026 TV Master Academy.
+        Todos os direitos reservados.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#inicio">
+            Início
+        </a>
+
+        <a href="#curso">
+            Curso
+        </a>
+
+        <a href="#modulos">
+            Módulos
+        </a>
+
+        <a href="#contato">
+            Contato
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     MODAL
+========================================================= -->
+
+<div
+    class="modal"
+    id="modal">
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            onclick="closeModal()">
+            ×
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    /*
+     * LINK DE PAGAMENTO
+     *
+     * Este é o link fornecido para o curso.
+     */
+    const PAYMENT_URL =
+        "https://mpago.la/1J1Yo7Y";
+
+
+    /*
+     * COMPRAR CURSO
+     */
+    function buyCourse() {
+
+        window.location.href = PAYMENT_URL;
+
+    }
+
+
+    /*
+     * CONTATO
+     *
+     * Troque futuramente pelo seu WhatsApp.
+     */
+    function contact() {
+
+        alert(
+            "Configure aqui seu WhatsApp ou e-mail de atendimento."
+        );
+
+    }
+
+
+    /*
+     * LOGIN
+     */
+    function openLogin() {
+
+        document.getElementById("modalContent").innerHTML = `
+
+            <div class="login-modal">
+
+                <span class="section-label">
+                    ÁREA DO ALUNO
+                </span>
+
+                <h2>
+                    Entrar
+                </h2>
+
+                <p>
+                    A área de login será conectada ao
+                    Supabase na próxima etapa.
+                </p>
+
+                <input
+                    type="email"
+                    placeholder="Seu e-mail"
+                    class="modal-input"
+                >
+
+                <input
+                    type="password"
+                    placeholder="Sua senha"
+                    class="modal-input"
+                >
+
+                <button
+                    class="primary-button"
+                    onclick="alert('Login será conectado ao Supabase.')">
+
+                    Entrar
+
+                </button>
+
+            </div>
+
+        `;
+
+        document
+            .getElementById("modal")
+            .classList.add("active");
+
+    }
+
+
+    /*
+     * CASOS DO LABORATÓRIO
+     */
+    function openCase(caseName) {
+
+        let content = "";
+
+        if (caseName === "TV não liga") {
+
+            content = `
+                <span class="section-label">
+                    LABORATÓRIO
+                </span>
+
+                <h2>TV não liga</h2>
+
+                <p>
+                    Caso prático: a televisão não apresenta
+                    sinais de funcionamento.
+                </p>
+
+                <ol>
+                    <li>Verificar alimentação.</li>
+                    <li>Inspecionar fonte.</li>
+                    <li>Verificar fusíveis e componentes.</li>
+                    <li>Verificar sinais de standby.</li>
+                    <li>Seguir o diagnóstico da placa.</li>
+                </ol>
+
+                <strong>
+                    ⚠️ Atenção: televisores podem conter
+                    tensões perigosas. Trabalhe sempre
+                    seguindo procedimentos de segurança.
+                </strong>
+            `;
+
+        } else {
+
+            content = `
+                <span class="section-label">
+                    LABORATÓRIO
+                </span>
+
+                <h2>${caseName}</h2>
+
+                <p>
+                    Este caso prático fará parte da área
+                    de laboratório do curso.
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="closeModal()">
+
+                    Continuar
+
+                </button>
+            `;
+
+        }
+
+        document.getElementById("modalContent").innerHTML =
+            content;
+
+        document
+            .getElementById("modal")
+            .classList.add("active");
+
+    }
+
+
+    /*
+     * FECHAR MODAL
+     */
+    function closeModal() {
+
+        document
+            .getElementById("modal")
+            .classList.remove("active");
+
+    }
+
+
+    /*
+     * FECHAR AO CLICAR FORA
+     */
+    document
+        .getElementById("modal")
+        .addEventListener("click", function(event) {
+
+            if (event.target === this) {
+
+                closeModal();
+
+            }
+
+        });
+
+
+    /*
+     * TEMA
+     */
+    const themeButton =
+        document.getElementById("themeButton");
+
+
+    themeButton.addEventListener(
+        "click",
+        function() {
+
+            document.body.classList.toggle("light-theme");
+
+            if (
+                document.body.classList.contains(
+                    "light-theme"
+                )
+            ) {
+
+                themeButton.textContent = "☀";
+
+                localStorage.setItem(
+                    "tvMasterTheme",
+                    "light"
+                );
+
+            } else {
+
+                themeButton.textContent = "☾";
+
+                localStorage.setItem(
+                    "tvMasterTheme",
+                    "dark"
+                );
+
+            }
+
+        }
+    );
+
+
+    /*
+     * RESTAURAR TEMA
+     */
+    if (
+        localStorage.getItem("tvMasterTheme") ===
+        "light"
+    ) {
+
+        document.body.classList.add(
+            "light-theme"
+        );
+
+        themeButton.textContent = "☀";
+
+    }
+
+
+    /*
+     * ESC
+     */
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Escape") {
+
+                closeModal();
+
+            }
+
+        }
+    );
+
+</script>
+
+</body>
+</html>
