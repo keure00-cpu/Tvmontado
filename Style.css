@@ -1,0 +1,635 @@
+/* =========================================================
+   TV MASTER ACADEMY
+   STYLE.CSS
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    min-height: 100vh;
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background: #050914;
+    color: #f5f7fb;
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+::selection {
+    background: #20d9ff;
+    color: #031018;
+}
+
+
+/* =========================================================
+   ROOT VARIABLES
+   ========================================================= */
+
+:root {
+
+    --bg: #050914;
+    --bg-secondary: #08111f;
+    --bg-tertiary: #0c1728;
+
+    --surface: rgba(14, 25, 43, 0.82);
+    --surface-solid: #0d192b;
+    --surface-light: #13243a;
+
+    --text: #f5f7fb;
+    --text-secondary: #aebbd0;
+    --text-muted: #74839a;
+
+    --primary: #18d7ff;
+    --primary-dark: #08a9d0;
+
+    --secondary: #6c63ff;
+
+    --success: #39e58c;
+    --warning: #ffc857;
+    --danger: #ff5d73;
+
+    --border: rgba(255, 255, 255, 0.09);
+    --border-light: rgba(255, 255, 255, 0.15);
+
+    --shadow:
+        0 25px 80px rgba(0, 0, 0, 0.35);
+
+    --shadow-small:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    --radius-small: 10px;
+    --radius: 18px;
+    --radius-large: 28px;
+
+    --container: 1200px;
+
+    --transition:
+        0.25s ease;
+}
+
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+body.light-theme {
+
+    --bg: #f4f7fb;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #edf2f8;
+
+    --surface: rgba(255, 255, 255, 0.92);
+    --surface-solid: #ffffff;
+    --surface-light: #eef4fa;
+
+    --text: #101827;
+    --text-secondary: #526176;
+    --text-muted: #738096;
+
+    --border: rgba(16, 24, 39, 0.10);
+    --border-light: rgba(16, 24, 39, 0.16);
+
+    --shadow:
+        0 25px 70px rgba(19, 35, 58, 0.13);
+
+    --shadow-small:
+        0 10px 30px rgba(19, 35, 58, 0.10);
+}
+
+
+/* =========================================================
+   BODY BACKGROUND
+   ========================================================= */
+
+body {
+    background:
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(24, 215, 255, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(108, 99, 255, 0.10),
+            transparent 30%
+        ),
+        var(--bg);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            180deg,
+            var(--primary),
+            var(--secondary)
+        );
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #49e5ff,
+            #817aff
+        );
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.topbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 76px;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding:
+        0 4vw;
+
+    background:
+        rgba(5, 9, 20, 0.78);
+
+    border-bottom:
+        1px solid var(--border);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+}
+
+.light-theme .topbar {
+    background:
+        rgba(255, 255, 255, 0.80);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: max-content;
+}
+
+.logo-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: #021018;
+
+    font-weight: 900;
+    font-size: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            #6ceeff
+        );
+
+    box-shadow:
+        0 0 25px
+        rgba(24, 215, 255, 0.35);
+}
+
+.logo strong {
+
+    display: block;
+
+    font-size: 14px;
+
+    letter-spacing: 1.5px;
+}
+
+.logo span {
+
+    display: block;
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.desktop-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+.desktop-nav a {
+
+    position: relative;
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        color var(--transition);
+}
+
+.desktop-nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: var(--primary);
+
+    transition:
+        width var(--transition);
+}
+
+.desktop-nav a:hover {
+
+    color: var(--primary);
+}
+
+.desktop-nav a:hover::after {
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+   ========================================================= */
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.theme-button,
+.login-button {
+
+    min-height: 40px;
+
+    border-radius: 10px;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+}
+
+.theme-button {
+
+    width: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+}
+
+.theme-button:hover {
+
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(24, 215, 255, 0.4);
+}
+
+.login-button {
+
+    padding:
+        0 17px;
+
+    color: var(--text);
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.login-button:hover {
+
+    color: var(--primary);
+
+    border-color:
+        rgba(24, 215, 255, 0.4);
+}
+
+
+/* =========================================================
+   GENERAL CONTAINER
+   ========================================================= */
+
+.section,
+.hero,
+.pricing-section,
+.contact-section,
+.certificate-section {
+
+    width: min(
+        calc(100% - 40px),
+        var(--container)
+    );
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+    min-height: 850px;
+
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(400px, 0.95fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.badge {
+
+    width: max-content;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        7px 13px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    color: var(--primary);
+
+    background:
+        rgba(24, 215, 255, 0.08);
+
+    border:
+        1px solid
+        rgba(24, 215, 255, 0.22);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+
+    animation:
+        badgePulse 3s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0
+            rgba(24, 215, 255, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 30px
+            rgba(24, 215, 255, 0.12);
+    }
+}
+
+.hero h1 {
+
+    max-width: 760px;
+
+    font-size:
+        clamp(
+            42px,
+            5vw,
+            72px
+        );
+
+    line-height: 1.04;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary),
+            #72edff 45%,
+            #918bff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color:
+        transparent;
+}
+
+.hero-description {
+
+    max-width: 650px;
+
+    color: var(--text-secondary);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-bottom: 42px;
+}
+
+.primary-button,
+.secondary-button,
+.buy-large {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding:
+        0 22px;
+
+    border-radius: 13px;
+
+    font-weight: 800;
+
+    font-size: 14
