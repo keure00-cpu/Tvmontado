@@ -1,202 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TV Master Academy — Montagem e Conserto de TVs</title>
+<title>TV Master Academy | Montagem e Conserto de TVs</title>
 
-    <meta
-        name="description"
-        content="Aprenda montagem, manutenção e conserto de TVs do zero ao nível profissional."
-    >
+<meta
+  name="description"
+  content="Curso profissional de montagem, manutenção e conserto de TVs. Aprenda diagnóstico, fontes, backlight, T-Con, Main Board, Smart TVs e muito mais."
+>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+<style>
 
-<body>
+/* =========================================================
+   RESET
+========================================================= */
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<header class="topbar">
+html {
+  scroll-behavior: smooth;
+}
 
-    <a href="#inicio" class="logo">
-        <span class="logo-icon">TV</span>
+body {
+  font-family: "DM Sans", sans-serif;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(0, 212, 255, .10), transparent 28%),
+    radial-gradient(circle at 10% 40%, rgba(92, 68, 255, .08), transparent 25%),
+    #05070b;
+  color: #f5f7fb;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-        <span>
-            <strong>TV MASTER</strong>
-            <small>ACADEMY</small>
-        </span>
-    </a>
+button,
+a {
+  font-family: inherit;
+}
 
-    <nav class="main-nav">
-        <a href="#curso">Curso</a>
-        <a href="#modulos">Módulos</a>
-        <a href="#laboratorio">Laboratório</a>
-        <a href="#certificado">Certificado</a>
-        <a href="#contato">Contato</a>
-    </nav>
+button {
+  cursor: pointer;
+}
 
-    <div class="top-actions">
-        <button class="theme-btn" id="themeToggle" aria-label="Alterar tema">
-            ◐
-        </button>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-        <button class="btn btn-primary btn-small" onclick="buyCourse()">
-            Comprar curso
-        </button>
-    </div>
+/* =========================================================
+   VARIABLES
+========================================================= */
 
-</header>
+:root {
+  --bg: #05070b;
+  --bg2: #080c13;
+  --card: rgba(15, 21, 31, .82);
+  --card2: #101722;
+  --border: rgba(255,255,255,.09);
 
+  --text: #f5f7fb;
+  --muted: #8995a8;
 
-<main>
+  --cyan: #18d9ff;
+  --blue: #4777ff;
+  --purple: #805cff;
 
-<!-- =====================================================
-     HERO
-===================================================== -->
+  --green: #34e89e;
+  --yellow: #ffd166;
+  --red: #ff647c;
 
-<section class="hero" id="inicio">
+  --radius: 24px;
+  --max: 1220px;
+}
 
-    <div class="hero-content">
+/* =========================================================
+   SCROLLBAR
+========================================================= */
 
-        <div class="eyebrow">
-            <span class="status-dot"></span>
-            CURSO PROFISSIONAL DE ELETRÔNICA
-        </div>
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-        <h1>
-            Aprenda a
-            <span class="gradient-text">montar e consertar TVs</span>
-            do zero ao profissional.
-        </h1>
+::-webkit-scrollbar-track {
+  background: #05070b;
+}
 
-        <p class="hero-description">
-            Aprenda na prática como diagnosticar defeitos, reparar placas,
-            fontes, backlight, T-Con, painel, HDMI e Smart TVs.
-        </p>
+::-webkit-scrollbar-thumb {
+  background: #263243;
+  border-radius: 10px;
+}
 
-        <div class="hero-buttons">
+::-webkit-scrollbar-thumb:hover {
+  background: #34445c;
+}
 
-            <button class="btn btn-primary btn-large" onclick="buyCourse()">
-                Começar agora
-                <span>→</span>
-            </button>
+/* =========================================================
+   HEADER
+========================================================= */
 
-            <a href="#curso" class="btn btn-secondary btn-large">
-                Conhecer o curso
-            </a>
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
 
-        </div>
+  height: 76px;
 
-        <div class="hero-proof">
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-            <div class="proof-item">
-                <strong>15</strong>
-                <span>Módulos</span>
-            </div>
+  padding: 0 5%;
 
-            <div class="proof-divider"></div>
+  background: rgba(5, 7, 11, .78);
+  backdrop-filter: blur(18px);
 
-            <div class="proof-item">
-                <strong>100%</strong>
-                <span>Prático</span>
-            </div>
+  border-bottom: 1px solid var(--border);
+}
 
-            <div class="proof-divider"></div>
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Space Grotesk", sans-serif;
+}
 
-            <div class="proof-item">
-                <strong>1</strong>
-                <span>Certificado</span>
-            </div>
+.logo-box {
+  width: 42px;
+  height: 42px;
 
-        </div>
+  display: grid;
+  place-items: center;
 
-    </div>
+  border-radius: 12px;
 
+  background:
+    linear-gradient(135deg, var(--cyan), var(--blue));
 
-    <!-- TV MOCKUP -->
+  color: #001017;
 
-    <div class="tv-showcase">
-
-        <div class="floating-card floating-card-top">
-            <span class="floating-icon">⚡</span>
-
-            <div>
-                <strong>Diagnóstico</strong>
-                <small>Aprenda na prática</small>
-            </div>
-        </div>
-
-
-        <div class="tv-frame">
-
-            <div class="tv-topbar">
-                <span>TV MASTER OS</span>
-
-                <div class="tv-status">
-                    <span></span>
-                    ONLINE
-                </div>
-            </div>
-
-            <div class="tv-screen">
-
-                <div class="screen-grid"></div>
-
-                <div class="screen-content">
-
-                    <span class="screen-label">
-                        LABORATÓRIO
-                    </span>
-
-                    <h3>
-                        Diagnóstico<br>
-                        de Smart TV
-                    </h3>
-
-                    <div class="diagnostic">
-
-                        <div>
-                            <small>POWER</small>
-                            <strong>✓ OK</strong>
-                        </div>
-
-                        <div>
-                            <small>BACKLIGHT</small>
-                            <strong>✓ OK</strong>
-                        </div>
-
-                        <div>
-                            <small>MAIN BOARD</small>
-                            <strong>SCAN</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="tv-bottom">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-        </div>
-
-
-        <div class="floating-card floating-card-bottom">
-
-            <div class="mini
+  font
